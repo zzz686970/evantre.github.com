@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <title>About</title>
+    <link href="../styles/meyer.css" rel="stylesheet" type="text/css"/>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        div#about {
+            width: 950px;
+            margin: 20px auto;
+        }
+
+        div#about p {
+            text-indent: 2em;
+            line-height: 2em;
+        }
+
+        div#about img {
+            padding: 5px;
+            background-color: #eee;
+            margin: 20px 0;
+            width: 940px;
+        }
+    </style>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+</head>
+<body>
+<div id="header">
+    <a href="../index.html"><img src="../images/f2e.gif"/></a>
+
+    <h1>Front End Engineer</h1>
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="community.html">社区</a></li>
+        <li><a href="books.html">书籍</a></li>
+        <li><a href="expert.html">专家</a></li>
+        <li id="lastlist"><a href="about.html">关于</a></li>
+    </ul>
+</div>
+
+<div id="about">
+    <p>由于本人对于前端开发比较感兴趣，因此特意搜集相关资料，做了这么个简单的网页。因为时间仓促，加上个人水平有限，其中仍有很多不足，欢迎提出宝贵意见，必将慢慢完善。</p>
+
+    <div id="jsshow">
+        <img src="../images/nodejs.jpg" id="jsimg"/>
+    </div>
+</div>
+
+<script>
+    var img_url = [ "nodejs.jpg", "coffeescript.jpg", "jquery.jpg", "github.jpg", "w3.jpg", "stackexchange.jpg" ];
+    var img = document.images["jsimg"];
+    var i = 1;
+    setInterval(function () {
+        if (i === 5) i = 0;
+        img.setAttribute("src", "../images/" + img_url[i]);
+        i += 1;
+    }, 3000);
+</script>
+
+</body>
+</html>

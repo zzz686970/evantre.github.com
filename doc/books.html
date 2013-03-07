@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <title>Some books</title>
+    <link href="../styles/meyer.css" rel="stylesheet" type="text/css"/>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        ul#books {
+            width: 950px;
+            margin: 20px auto;
+            border: 1px dashed #ddd;
+        }
+
+        ul#books ul {
+            margin-left: 2em;
+        }
+
+        ul#books li {
+            clear: both;
+            margin: 5px 0 20px 5px;
+            overflow: hidden;
+        }
+
+        ul#books img {
+            height: 200px;
+            margin: 10px;
+            float: left;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        ul#books img.hover {
+            position: relative;
+            top: -10px;
+            left: 10px;
+        }
+    </style>
+
+    <script src="../scripts/jquery.js"></script>
+</head>
+<body>
+<div id="header">
+    <a href="../index.html"><a href=""><img src="../images/f2e.gif"/></a>
+
+        <h1>Front End Engineer</h1>
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="community.html">社区</a></li>
+        <li><a href="books.html">书籍</a></li>
+        <li><a href="expert.html">专家</a></li>
+        <li id="lastlist"><a href="about.html">关于</a></li>
+    </ul>
+</div>
+
+<ul id="books">
+    <li><h2>规范标准</h2>
+        <ul>
+            <li style="margin-top: 20px;">
+                <a href="http://www.w3.org/html/" class="tag">HTML</a>
+                <a href="http://www.w3.org/Style/CSS/" class="tag">CSS</a>
+                <a href="http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm" class="tag">ECMA-262</a>
+                <a href="http://www.w3.org/html/ig/zh/wiki/ES5" class="tag">ECMA-262(中文)</a>
+            </li>
+        </ul>
+    </li>
+    <li><h2>书籍</h2>
+        <ul>
+            <li><h3>HTML</h3>
+                <a href="http://book.douban.com/subject/3040870/"><img src="../images/head_f_html.jpg"
+                                                                       alt="Head First HTML"/></a>
+                <a href="http://book.douban.com/subject/11610880/"><img src="../images/html5_m.jpg"
+                                                                        alt="HTML5 : The Missing Manual"/></a>
+                <a href="http://book.douban.com/subject/10608238/"><img src="../images/pro_html5.jpg"
+                                                                        alt="Pro HTML5 Programming"/></a>
+            </li>
+            <li><h3>CSS</h3>
+                <a href="http://book.douban.com/subject/2308234/"><img src="../images/css_d.jpg"
+                                                                       alt="CSS:the Definitive Guide"/></a>
+                <a href="http://book.douban.com/subject/1937523/"><img src="../images/css_missing.jpg"
+                                                                       alt="CSS: The Missing Manual"/></a>
+                <a href="http://book.douban.com/subject/4736167/"><img src="../images/css_m.jpg"
+                                                                       alt="Css Mastery Advanced Web Standards Solutions"/></a>
+            </li>
+            <li><h3>JavaScript</h3>
+                <a href="http://book.douban.com/subject/6038371/"><img src="../images/j_dom.jpg"
+                                                                       alt="DOM Scripting: Web Design with JavaScript and the Document Object Model"/></a>
+                <a href="http://book.douban.com/subject/10546125/"><img src="../images/pro.jpg"
+                                                                        alt="Professional JavaScript for Web"/></a>
+                <a href="http://book.douban.com/subject/10549733/"><img src="../images/defined.jpg"
+                                                                        alt="JavaScript: The Definitive Guide"/></a>
+                <a href="http://book.douban.com/subject/11506062/"><img src="../images/pattern.jpg"
+                                                                        alt="JavaScript Patterns"/></a>
+                <a href="http://book.douban.com/subject/5362856/"><img src="../images/h_p_js.jpg"
+                                                                       alt="High Performance JavaScript"/></a>
+                <a href="http://book.douban.com/subject/3329540/"><img src="../images/p_j_dp.jpg"
+                                                                       alt="Pro JavaScript Design Patterns"/></a>
+                <a href="http://book.douban.com/subject/10542576/"><img src="../images/zam.jpg"
+                                                                        alt="JavaScript语言精髓与编程实践"/></a>
+                <a href="http://book.douban.com/subject/10547007/"><img src="../images/maintainable_js.jpg"
+                                                                        alt="Maintainable JavaScript"/></a>
+                <a href="http://book.douban.com/subject/11874748/"><img src="../images/goodp.jpg"
+                                                                        alt="JavaScript:The Good Parts"/></a>
+                <a href="http://book.douban.com/subject/10569608/"><img src="../images/jq.jpg"
+                                                                        alt="Learning jQuery"/></a>
+                <a href="http://book.douban.com/subject/10733304/"><img src="../images/js_web_app.jpg"
+                                                                        alt="JavaScript Web Applications"/></a>
+            </li>
+            <li><h3>Other</h3>
+                <a href="http://book.douban.com/subject/3132277/"><img src="../images/h_p_w.jpg" alt="高性能网站建设指南"/></a>
+                <a href="http://book.douban.com/subject/4719162/"><img src="../images/peformance_best.jpg"
+                                                                       alt="高性能网站建设进阶指南"/></a>
+                <a href="http://book.douban.com/subject/10746113/"><img src="../images/http.jpg"
+                                                                        alt="HTTP: The Definitive Guide"/></a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script src="../scripts/main.js"></script>
+<script>
+    $('ul#books img').hover(function () {
+        $(this).addClass('hover');
+    }, function () {
+        $(this).removeClass('hover');
+    });
+</script>
+</body>
+</html>

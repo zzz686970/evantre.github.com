@@ -1,0 +1,183 @@
+body {
+    background-color: #fff;
+}
+
+#header {
+    width: 950px;
+    margin: 10px auto;
+    position: relative;
+}
+
+#header h1 {
+    width: 350px;
+    position: absolute;
+    top: 45px;
+    left: 250px;
+    font-family: tahoma, arial, sans-serif;
+    color: #5cf;
+    font-size: 2em;
+}
+
+#header image {
+
+}
+
+div#nav {
+    color: #fff;
+    height: 39px;
+    background-color: #4BA3E9;
+}
+
+#nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 950px;
+    margin: 0 auto;
+}
+
+#nav ul li {
+    float: left;
+    border-left: 1px dashed #ccc;
+    width: 100px;
+    height: 39px;
+}
+
+#nav ul li#lastlist {
+    border-right: 1px dashed #ccc;
+}
+
+#nav ul a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    text-decoration: none;
+}
+
+#nav ul a:link {
+
+}
+
+#nav ul a:visited {
+    color: #fff;
+}
+
+#nav ul a:hover {
+    color: #fff;
+    background-color: #4383fe;
+}
+
+/*-----------------------------------------*/
+#content {
+    width: 950px;
+    margin: 20px auto;
+}
+
+#content .part {
+    margin-bottom: 50px;
+}
+
+#content p {
+    text-indent: 2em;
+    margin: 20px 0 20px 4em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+div#use ul {
+    margin: 20px 0 0 4em;
+    overflow: hidden;
+}
+
+div#use ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.tag {
+    color: #009A61;
+    text-decoration: none;
+    background-color: #f3f3f3;
+    display: inline-block;
+    line-height: 2em;
+    height: 2em;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+a.tag:hover {
+    color: #4BA3E9;
+    border-color: #5cf;
+}
+
+h2, h3 {
+    color: #4BA3E9;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+div#content h2 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+div#struct {
+    clear: both;
+}
+
+div#struct h2 {
+    margin-bottom: 20px;
+}
+
+div#struct a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+div#struct a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+div#struct a:hover {
+    text-decoration: underline;
+}
+
+div#struct li {
+    margin: 5px 0;
+}
+
+div#struct ul li {
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px dashed #bbb;
+}
+
+div#struct ul li ul {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+div#struct ul li ul li {
+    float: left;
+    border: none;
+}
+
+/*------------------------------------------*/
+#footer {
+    color: #fff;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #4BA3E9;
+}
